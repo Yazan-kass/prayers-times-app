@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 // eslint-disable-next-line react/prop-types
 export default function MediaCard({ name, time, prayerimage }) {
   return (
-    <Card sx={{ maxWidth: 345 }} className="hover:animate-pulse">
+    <Card sx={{ maxWidth: 345, minWidth:240 }} className="hover:animate-pulse">
       <CardMedia
         sx={{ height: 140 }}
         image={prayerimage}
