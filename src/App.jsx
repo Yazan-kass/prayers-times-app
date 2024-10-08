@@ -1,5 +1,5 @@
 import { Container } from "@mui/material";
-import MainContent from "~/components/MainContent";
+import MainContent from "./Components/Maincontent";
 
 function App() {
   return (
