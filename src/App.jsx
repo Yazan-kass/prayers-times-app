@@ -1,5 +1,6 @@
 import { Container } from "@mui/material";
-import MainContent from "./Components/Maincontent";
+import Content from "./components/Content";
+
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
         }}
       >
         <Container maxWidth="xl">
-          <MainContent />
+          {/* <MainContent /> */}
+          <Content/>
         </Container>
       </div>
     </>

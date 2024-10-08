@@ -16,7 +16,7 @@ import moment from "moment";
 
 import "moment/dist/locale/ar-dz";
 moment.locale("ar");
-const Maincontent = () => {
+const Content = () => {
   // STATES
   const isSmallScreen = useMediaQuery("(max-width:600px)");
   const [nextPrayerIndex, setNextPrayerIndex] = useState(2);
@@ -164,7 +164,10 @@ const Maincontent = () => {
           </Typography>
         </Box>
         <Box>
-          <Typography className="text-white " style={{ fontSize: "16px" }}>
+          <Typography
+            className="text-white "
+            style={{ fontSize: "16px", fontFamily: "IBM Plex Sans Arabic" }}
+          >
             متبقي حتى صلاة {prayersArray[nextPrayerIndex].displayName}
           </Typography>
           <Typography
@@ -258,4 +261,4 @@ const Maincontent = () => {
   );
 };
 
-export default Maincontent;
+export default Content;
